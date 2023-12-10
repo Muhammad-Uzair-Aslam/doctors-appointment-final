@@ -96,7 +96,7 @@ export default function Signup() {
           </form> 
         </div>
         <div className="hidden md:block ml-10  lg:flex  ">
-          <Image height={600} width={400} src="/assets/two.jpg" alt="signup" />
+          <Image height={600} width={400} src="/assets/images (11).jfif" alt="signup" />
         </div>
       </div>
     </div>
