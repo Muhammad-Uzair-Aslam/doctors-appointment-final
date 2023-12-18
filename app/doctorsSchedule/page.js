@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import ImageCard from '../components/ImageCard';
-import Link from 'next/link';
 
 export default function DoctorsSchedule() {
     const tableData = [
@@ -35,11 +34,9 @@ export default function DoctorsSchedule() {
                             <td className="border px-4 py-2  "><div className=" flex justify-center">{row.openAt}</div></td>
                             <td className="border px-4 py-2  "><div className="flex justify-center">{row.closeAt}</div> </td>
                             <td className="border px-4 py-2 flex justify-center ">
-                               
-                                  
-                                    <Link  className="bg-purple-400 hover:bg-purple-700  text-white font-bold  px-4 rounded-xl" href={"/appointments"}  >
-                                     <h1>  Fixed Appointment +</h1>   </Link>
-       
+                                <button className="bg-purple-400 hover:bg-purple-700  text-white font-bold  px-4 rounded-xl" onClick={() => handleButtonClick(row.id)}>
+                                    Fixed Appointment +
+                                </button>
                             </td>
                         </tr>
                     ))}

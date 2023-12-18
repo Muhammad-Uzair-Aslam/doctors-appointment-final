@@ -14,7 +14,7 @@ export default function Navbar() {
 
     return (
         <>
-            <div className=" lg:px-10 sm:px-2 py-4 bg-blue-800 text-white">
+            <div className=" lg:px-10 sm:px-2 py-4 ">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <div className="flex-shrink-0">
@@ -85,9 +85,6 @@ export default function Navbar() {
                                 </Link>
                                 <Link href="/createProfile">
                                     <p className='hover:underline underline-offset-4'>Create Profile</p>
-                                </Link>
-                                <Link href="/appointmentsTable">
-                                    <p className='hover:underline underline-offset-4'>AppointmentsTable</p>
                                 </Link>
                             </div>
                             <div className="flex justify-between md:gap-3 ">
